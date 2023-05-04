@@ -1,0 +1,17 @@
+@import '../../assets/scss_styles/global-imports';
+
+.customBtm {
+   border-radius: 10px;
+   color: $clr_gray;
+   @include flex-center;
+   min-height: 2rem;
+   border: 1px solid $clr_light_gray;
+
+   &:hover {
+      @include btn_hover;
+   }
+
+   @include _576 {
+      height: 2.5rem;
+   }
+}

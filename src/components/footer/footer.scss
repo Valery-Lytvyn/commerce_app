@@ -1,0 +1,55 @@
+@import '../../assets/scss_styles/global-imports';
+
+.footer {
+   background: $clr_light_gray;
+   background: linear-gradient(180deg, $clr_light_gray 0%, $clr_main 100%);
+   color: $clr_white;
+   margin-top: auto;
+   display: flex;
+   justify-content: space-around;
+   @include text_shadow;
+
+   @include _576 {
+      flex-direction: column-reverse;
+   }
+
+   .footerInfo {
+      @include flex-center-column;
+      font-weight: 200;
+
+      .logo {
+         font-size: 1.5rem;
+         border-bottom: 1px solid $clr_white;
+
+         .logoIcon {
+            color: $clr_white;
+         }
+
+         .logoText {
+            color: $clr_white;
+         }
+      }
+   }
+
+   .socialMediaIcons {
+      @include flex-center;
+      font-size: 1.5rem;
+   }
+
+   .location {
+      @include flex-center-column;
+
+      .locationTitle {
+         font-size: 1.5rem;
+      }
+
+      ul {
+         @include flex-center-column;
+
+         li {
+            list-style: none;
+            font-weight: 200;
+         }
+      }
+   }
+}

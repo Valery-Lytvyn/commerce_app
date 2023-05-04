@@ -1,0 +1,49 @@
+@mixin btn_hover {
+   color: $clr_white;
+   box-shadow: 0 0 3px 1px $clr_light_gray;
+   background: $clr_main;
+   background: radial-gradient(circle, $clr_main 0%, $clr_light_gray 100%);
+   transition: 1000ms;
+}
+
+@mixin text_shadow {
+   text-shadow: 1px 1px 3px $clr_gray;
+}
+
+@mixin flex-column {
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin flex-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin flex-center-column {
+   @include flex-center;
+   flex-direction: column;
+}
+
+@mixin flex-center-vert {
+   display: flex;
+   align-items: center;
+}
+
+@mixin flex-center-horiz {
+   display: flex;
+   justify-content: center;
+}
+
+@mixin _576 {
+   @media (max-width: 576px) {
+      @content;
+   }
+}
+
+@mixin _450 {
+   @media (max-width: 450px) {
+      @content;
+   }
+}

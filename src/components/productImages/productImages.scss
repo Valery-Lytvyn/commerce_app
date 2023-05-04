@@ -1,0 +1,47 @@
+@import '../../assets/scss_styles/global-imports';
+
+
+.productImagePart {
+   @include flex-column;
+
+   .selectedImage {
+      @include flex-center;
+      height: 250px;
+      position: relative;
+
+      .arrowBtn {
+         font-size: 1.5rem;
+         font-weight: 600;
+         color: $clr_main;
+         position: absolute;
+         z-index: 100;
+         border-radius: 50%;
+         @include flex-center;
+
+         &:hover {
+            color: $clr_white;
+            background: $clr_light_main;
+            transform: scale(1.1);
+            transition: 500ms;
+         }
+      }
+
+      .prevArrow {
+         left: 10px;
+      }
+
+      .nextArrow {
+         right: 10px;
+      }
+   }
+
+   .previewImageList {
+      @include flex-center;
+      flex-wrap: wrap;
+
+      .previewImage {
+         height: 60px;
+         width: 120px;
+      }
+   }
+}

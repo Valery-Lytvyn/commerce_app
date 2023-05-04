@@ -1,0 +1,30 @@
+@import '../../../assets/scss_styles/global-imports';
+
+.itemCard {
+   display: flex;
+
+   @include _450 {
+      @include flex-center-column;
+   }
+
+   .itemImg {
+      height: 120px;
+      width: 120px;
+
+      @include _576 {
+         height: 240px;
+         width: 240px;
+      }
+   }
+
+   .itemDescription {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .itemNameBrand {
+         color: $clr_gray;
+      }
+   }
+}

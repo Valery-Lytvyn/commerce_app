@@ -1,0 +1,61 @@
+@import '../../assets/scss_styles/global-imports';
+
+.categoriesMenuWrap {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.4);
+   z-index: 101;
+   overflow-y: auto;
+
+   .categoriesMenu {
+      position: absolute;
+      top: 120px;
+      left: 15px;
+      width: fit-content;
+      background: rgb(201, 201, 201);
+      background: linear-gradient(90deg, rgba(201, 201, 201, 0.87) 0%, rgba(255, 255, 255, 0.87) 100%);
+      @include flex-center-column;
+
+      @include _576 {
+         width: 100%;
+         left: 0;
+      }
+
+      .closeBtn {
+         font-size: 1.5rem;
+         line-height: 1.5rem;
+         align-self: flex-end;
+      }
+
+      .categoriesMenuTitle {
+         @include text_shadow;
+         color: $clr_main;
+         font-weight: 600;
+      }
+
+      .category {
+         list-style: square;
+         text-transform: capitalize;
+         color: $clr_gray;
+
+         &::marker {
+            color: $clr_main;
+         }
+
+         &:hover {
+            cursor: pointer;
+            color: $clr_main;
+            @include text_shadow;
+
+            &::marker {
+               color: $clr_gray;
+               position: relative;
+               right: 0;
+            }
+         }
+      }
+   }
+}

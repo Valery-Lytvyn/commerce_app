@@ -1,0 +1,34 @@
+@import '../../assets/scss_styles/global-imports';
+
+.cart {
+
+   .titleTableCart {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+      font-size: .8rem;
+   }
+
+   .totalSum {
+      @include flex-center-vert;
+      gap: 1rem;
+   }
+
+   .cost {
+      font-weight: 700;
+      text-align: center;
+   }
+
+   .cartBtn {
+      @include _576 {
+         @include flex-center-horiz;
+         width: 100%;
+
+         @include _450 {
+            .customBtm {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

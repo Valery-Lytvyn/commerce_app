@@ -1,0 +1,27 @@
+@import '../../assets/scss_styles/global-imports';
+
+.productSummary {
+   @include flex-column;
+   border-bottom: 1px solid $clr_main;
+
+   .productTitle {
+      text-transform: capitalize;
+      font-weight: 700;
+   }
+
+   .rating,
+   .productPrice {
+      @include flex-center-vert;
+      align-items: baseline;
+      gap: 2rem;
+   }
+
+   .star-container {
+      height: 35px;
+   }
+}
+
+.servicePart {
+   @include flex-center-vert;
+   gap: 2rem;
+}

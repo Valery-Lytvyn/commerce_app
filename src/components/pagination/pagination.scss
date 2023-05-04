@@ -1,0 +1,24 @@
+@import '../../assets/scss_styles/global-imports';
+
+.pagination {
+   @include flex-center;
+   flex-wrap: wrap;
+   gap: .2rem;
+
+   .arrowBtn {
+      border: 1px solid $clr_light_main;
+      @include flex-center;
+      border-radius: 10px;
+      background: $clr_white;
+
+      &:hover {
+         @include btn_hover;
+      }
+   }
+
+   .activePage {
+      .customBtm {
+         background: $clr_main;
+      }
+   }
+}

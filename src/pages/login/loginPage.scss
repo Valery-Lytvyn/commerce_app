@@ -1,0 +1,125 @@
+@import '../../assets/scss_styles/global-imports';
+
+.loginPage {
+   @include flex-center;
+   color: $clr_gray;
+
+   @include _576 {
+      input {
+         height: 2.5rem;
+         font-size: 1.2rem;
+      }
+   }
+
+   .loginForm,
+   .registerForm {
+      width: 620px;
+      border: 1px solid $clr_white;
+      border-radius: 15px;
+      @include flex-center-column;
+
+      .offerText {
+         display: flex;
+         width: 70%;
+
+         &:before,
+         &:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 1px solid $clr_gray;
+            margin: auto;
+         }
+      }
+
+      .loginBtn {
+         width: 200px;
+         border: 1px solid $clr_light_main;
+         border-radius: 10px;
+         @include flex-center;
+         gap: 1rem;
+
+         @include _576 {
+            height: 2.5rem;
+         }
+
+         &:hover {
+            background: $clr_white;
+            transition: 500ms;
+         }
+
+         .loginBtnIcon {
+            font-size: 1.5rem;
+            @include flex-center;
+         }
+      }
+
+      .signUpBtn {
+         background: $clr_light_gray;
+         color: $clr_light_main;
+         @include text_shadow
+      }
+
+      .questionLink {
+         font-weight: 200;
+         font-size: .8rem;
+         text-decoration: underline;
+
+         &:hover {
+            cursor: pointer;
+            @include text_shadow;
+         }
+      }
+
+      .SignUpForm,
+      .SignInForm {
+         @include flex-center-column;
+         gap: 1rem;
+
+
+         .inputWrap {
+            @include flex-center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+
+            @include _576 {
+               flex-direction: column;
+            }
+
+            .inputGroup {
+               @include flex-column;
+
+               @include _576 {
+                  width: 100%;
+               }
+
+               label {
+                  font-size: .9rem;
+               }
+
+               input {
+                  background: transparent;
+                  border: 1px solid $clr_gray;
+                  border-radius: 5px;
+                  outline: none;
+                  padding-left: 5px;
+
+                  @include _576 {
+                     width: 100%;
+                  }
+
+
+                  &:focus {
+                     border: 1px solid $clr_main;
+                  }
+               }
+            }
+         }
+      }
+
+      .questionLinkWrap {
+         @include flex-center;
+         flex-wrap: wrap;
+         gap: 2rem;
+      }
+   }
+}

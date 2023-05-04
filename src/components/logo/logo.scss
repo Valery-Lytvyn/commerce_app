@@ -1,0 +1,36 @@
+@import '../../assets/scss_styles/global-imports';
+
+.logo {
+   @include flex-center-vert;
+   width: fit-content;
+   font-size: 3rem;
+   color: $clr_main;
+   font-weight: 800;
+   border-bottom: 1px solid $clr_main;
+   font-style: italic;
+   cursor: pointer;
+
+   @include _576 {
+      width: 100%;
+      @include flex-center;
+      border-bottom: 1px solid $clr_white;
+   }
+
+   .logoIcon {
+      color: $clr_main;
+      @include flex-center-vert;
+
+      @include _576 {
+         color: $clr_white;
+      }
+   }
+
+   .logoText {
+      color: $clr_main;
+      text-shadow: 2px 0px 3px $clr_light_gray;
+
+      @include _576 {
+         color: $clr_white;
+      }
+   }
+}

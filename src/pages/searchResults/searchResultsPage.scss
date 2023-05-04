@@ -1,0 +1,10 @@
+@import '../../assets/scss_styles/global-imports';
+
+
+.searchInfo {
+   @include flex-center-column;
+
+   .sadFace {
+      font-size: 2rem;
+   }
+}

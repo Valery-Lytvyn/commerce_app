@@ -1,0 +1,11 @@
+@import '../../assets/scss_styles/global-imports';
+
+.priceOld {
+   font-weight: 200;
+   text-decoration: line-through;
+}
+
+.discountedPrice {
+   font-weight: 700;
+   color: $clr_black;
+}

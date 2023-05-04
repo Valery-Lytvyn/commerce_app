@@ -1,0 +1,27 @@
+@import '../../assets/scss_styles/global-imports';
+
+.quantity {
+   font-weight: 600;
+   width: fit-content;
+   @include flex-center;
+   background: #ebebeb;
+   border-radius: 7px;
+
+   @include _576 {
+      height: 2.5rem;
+   }
+
+   .counterButtons {
+      @include flex-center-column;
+
+      & div {
+         @include flex-center;
+
+         &:hover {
+            background: $clr_gray;
+            color: $clr_white;
+            cursor: pointer;
+         }
+      }
+   }
+}

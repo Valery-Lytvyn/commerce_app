@@ -1,0 +1,75 @@
+@import '../../assets/scss_styles/global-imports';
+
+.header {
+   width: 100%;
+   background: $clr_main;
+   background: linear-gradient(208deg, $clr_light_main 0%, $clr_white 76%);
+   color: $clr_white;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+
+   @include _576 {
+      color: $clr_gray;
+   }
+
+   .serviceIcons {
+      @include flex-center-vert;
+      justify-content: flex-end;
+      gap: 1rem;
+      width: 100%;
+      height: 100%;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: inherit;
+
+      @include _576 {
+         font-size: 2.2rem;
+      }
+
+      .cartIcon {
+         position: relative;
+         width: 2.2rem;
+         height: 2.2rem;
+         @include flex-center;
+
+         .cartValue {
+            font-size: .8rem;
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 1;
+         }
+      }
+   }
+
+   .categoriesMenu {
+      width: fit-content;
+      font-size: 1.5rem;
+      @include flex-center-vert;
+      color: $clr_main;
+
+      @include _576 {
+         color: $clr_gray;
+      }
+   }
+
+   a {
+      text-decoration: none;
+      color: inherit;
+
+      &:visited {
+         color: inherit;
+      }
+   }
+
+
+   .cartIcon {
+      &:hover {
+         color: $clr_gray;
+      }
+   }
+}

@@ -1,0 +1,7 @@
+@import '../../assets/scss_styles/global-imports';
+
+.productList {
+   @include flex-center;
+   flex-direction: column;
+   width: 100%;
+}

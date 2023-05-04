@@ -1,0 +1,110 @@
+@import '../../assets/scss_styles/global-imports';
+
+.productCard {
+   width: 100%;
+   height: 420px;
+   @include flex-column;
+   background-color: $clr_white;
+   border-radius: 15px;
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+   color: $clr_gray;
+   border: 1px solid $clr_light_main;
+
+   @include _576 {
+      width: 280px;
+   }
+
+   &:hover {
+      box-shadow: 0 0 5px 1px $clr_gray;
+      background: $clr_light_main;
+      transition: 1000ms;
+
+      img {
+         transform: scale(1.1);
+         transition: 1000ms;
+         cursor: pointer;
+      }
+
+      .category,
+      .discount {
+         opacity: 1;
+      }
+   }
+
+   .productImg {
+      width: 100%;
+      height: 240px;
+      border-radius: 15px 15px 0 0;
+      overflow: hidden;
+   }
+
+   .productBrand {
+      font-weight: 400;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+   }
+
+   .productTitle {
+      font-weight: 700;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $clr_black;
+   }
+
+   .productPrice {
+      align-self: center;
+      @include flex-center-vert;
+      gap: 1rem;
+   }
+
+   .category,
+   .discount {
+      position: absolute;
+      background-color: $clr_white;
+      z-index: 10;
+      opacity: .6;
+   }
+
+   .category {
+      top: 15px;
+      right: 0px;
+      color: $clr_black;
+      border-radius: 5px 0 0 5px;
+
+      &:hover {
+         @include text_shadow;
+         border: 1px solid $clr_main;
+      }
+   }
+
+   .discount {
+      top: 15px;
+      left: 0px;
+      color: $clr_red;
+      border-radius: 0 5px 5px 0;
+   }
+
+   .cartIcon {
+      position: absolute;
+      @include flex-center;
+      bottom: calc(50% - 10rem);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 100;
+      color: $clr_black;
+      font-size: 3rem;
+      width: 4rem;
+      height: 4rem;
+      background: $clr_light_main;
+      border-radius: 50%;
+      cursor: pointer;
+   }
+}

@@ -1,0 +1,37 @@
+@import '../../assets/scss_styles/global-imports';
+
+.mottoBanner {
+   @include flex-center-vert;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   width: 100%;
+
+
+   .motto {
+      width: 180px;
+      @include flex-center-vert;
+      border: 1px solid $clr_main;
+      border-radius: 15px;
+      background: $clr_main_transparent;
+      color: $clr_gray;
+
+      .mottoIcon {
+         font-size: 1.4rem;
+      }
+
+      .mottoDescription {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+
+         .mottoTitle {
+            font-size: .9rem;
+            font-weight: 600;
+         }
+
+         .mottoText {
+            font-size: 0.8rem;
+         }
+      }
+   }
+}
