@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcommerce_app=self.webpackChunkcommerce_app||[]).push([[853],{3853:function(r,t,e){e.d(t,{fsB:function(){return n}});var c=e(9983);function n(r){return(0,c.w_)({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"line",attr:{x1:"19",y1:"5",x2:"5",y2:"19"}},{tag:"circle",attr:{cx:"6.5",cy:"6.5",r:"2.5"}},{tag:"circle",attr:{cx:"17.5",cy:"17.5",r:"2.5"}}]})(r)}}}]);
+//# sourceMappingURL=853.9d58e0c8.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcommerce_app=self.webpackChunkcommerce_app||[]).push([[808],{5808:function(e,r,c){c.r(r),c.d(r,{default:function(){return a}});c(2791);var s=c(7689),n=c(184);var a=function(){var e=(0,s.lk)();return(0,n.jsxs)("div",{className:"errorPage",children:[(0,n.jsx)("h1",{children:"Oops!"}),(0,n.jsx)("p",{children:"Sorry, an unexpected error has occurred."}),(0,n.jsx)("p",{children:(0,n.jsx)("i",{children:e.statusText||e.message})})]})}}}]);
+//# sourceMappingURL=808.77d06a64.chunk.js.map
